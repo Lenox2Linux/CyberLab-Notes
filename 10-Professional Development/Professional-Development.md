@@ -2,7 +2,6 @@
 
 **Updated:** 2026-04-05
 **Name:** Raynard A. Porter
-**Username:** aredeebee / Laude (lab contexts)
 
 ---
 
@@ -24,7 +23,6 @@
 ### Academic Highlights
 - PTK (Phi Theta Kappa) member
 - Strong GPA
-- ANTHR 101 enrolled
 
 ### Transfer Targets (Fall/Summer 2027)
 - Penn State
@@ -40,9 +38,6 @@
 | GIAC GCIH | Post Security+ | Planned |
 | OSCP | Post GCIH | Planned |
 
-### Study Resources
-- Network+ CertMaster v9 — currently on Chapter 11
-- Weakest areas from Network+ quiz: IP Helper, native VLAN, DHCP option numbers, TCP state machine, Windows vs Linux command differences
 
 ---
 

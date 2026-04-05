@@ -59,4 +59,4 @@
 - [[VM-Registry]]
 - [[Trusted-Zone]]
 - [[Lab-Architecture-Overview]]
-- [[INTELUX-FW-01]]
+- [[pfSense-Firewall]]

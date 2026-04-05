@@ -75,6 +75,7 @@ The Isolated Zone contains all untrusted or adversarial systems. No Wazuh agents
 ---
 
 ## Related Notes
+- [[INTELUX-RED-01 — Apple MacBook Pro (2012)]]
+- [[RED-01-Build-History]]
 - [[Multi-Tiered-Defensive-Architecture]]
-- [[Kill-Chain-A]]
-- [[RED-01]]
+- [[Kill-Chain-A-Flow]]

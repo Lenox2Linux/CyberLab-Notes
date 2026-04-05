@@ -91,7 +91,7 @@ As part of the full INTELUX VLAN migration (192.168.1.x → 10.100.x.x), RED-01 
 ---
 
 ## Related Notes
-- [[INTELUX-RED-01-MacBookPro]]
+- [[INTELUX-RED-01 — Apple MacBook Pro (2012)]]
 - [[Isolated-Zone]]
 - [[(Phase 0) Multi-Tiered Defensive Architecture & Cybersecurity Lab Isolation]]
 - [[Kali Cyber Lab Rebuild]]

@@ -65,5 +65,5 @@
 
 ## Related Notes
 - [[Equipment-Inventory]]
-- [[06-VM/VM-Registry]]
-- [[SRV-01-Services]]
+- [[VM-Registry]]
+- [[INTELUX-SRV-01 — Apple Mac Mini (Late 2014)]]

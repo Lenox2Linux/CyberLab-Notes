@@ -104,6 +104,10 @@
 
 ## Related Notes
 - [[Lab-Architecture-Overview]]
-- [[HV-01]]
-- [[SRV-01-Services]]
-- [[RED-01]]
+- [[INTELUX-HV-01-M920t]]
+- [[INTELUX-CL-01-M910t]]
+- [[INTELUX-SRV-01 — Apple Mac Mini (Late 2014)]]
+- [[INTELUX-RED-01 — Apple MacBook Pro (2012)]]
+- [[INTELUX-ADM-01 — Lenovo ThinkPad T14 (Gen 2)]]
+- [[Lenovo ThinkPad T14 (Gen 2)]]
+- [[VM-Registry]]

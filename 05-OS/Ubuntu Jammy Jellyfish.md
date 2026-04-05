@@ -60,7 +60,7 @@
 
 ## Related Notes
 
-- [[INTELUX-SRV-01-MacMini]]
+- [[INTELUX-SRV-01 — Apple Mac Mini (Late 2014)]]
 - [[Trusted-Zone]]
 - [[Wazuh-SIEM]]
 - [[OS-Registry]]

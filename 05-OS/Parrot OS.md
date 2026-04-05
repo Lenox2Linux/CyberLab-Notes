@@ -53,7 +53,7 @@ See [[RED-01-Build-History]] for the full evolution from macOS Monterey → Kali
 ---
 
 ## Related Notes
-- [[INTELUX-RED-01-MacBookPro]]
+- [[INTELUX-RED-01 — Apple MacBook Pro (2012)]]
 - [[RED-01-Build-History]]
 - [[Isolated-Zone]]
 - [[OS-Registry]]

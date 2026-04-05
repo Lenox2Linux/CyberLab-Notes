@@ -106,6 +106,8 @@ The Trusted Zone covers all production lab infrastructure. Wazuh agents are depl
 
 ## Related Notes
 - [[Lab-Architecture-Overview]]
-- [[SRV-01-Services]]
+- [[INTELUX-SRV-01 — Apple Mac Mini (Late 2014)]]
 - [[Wazuh-SIEM]]
-- [[DC-01-Deploy]]
+- [[INTELUX-DC-01]]
+- [[VM-Registry]]
+- [[pfSense-Firewall]]
