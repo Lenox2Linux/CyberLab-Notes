@@ -1,0 +1,52 @@
+[33mcommit a2f719e4ccac1b3992c0ca61a704699737eb1a58[m
+Author: Lenox2Linux <rapnetsec@gmail.com>
+Date:   Sun Apr 5 12:40:47 2026 -0400
+
+    Full vault refresh — equipment, OS, VMs, diagrams, screenshots, retired folder complete
+
+ .../Lab-Architecture-Overview.md                   |  36 [32m++[m[31m---[m
+ .../Multi-Tiered-Defensive-Architecture.md         |  12 [32m+[m[31m-[m
+ .../Virtualized Cyber Lab Host.md                  | 156 [31m---------------------[m
+ 02-Isolated Zone/Isolated-Zone.md                  |  18 [32m+[m[31m--[m
+ 03-Trusted Zone/Trusted-Zone.md                    |  54 [32m+++[m[31m----[m
+ 04-Equipment/Equipment-Inventory.md                |  84 [32m+++++[m[31m------[m
+ 04-Equipment/HOME-SRV-01-M900-Tiny.md              |  99 [32m+++++++++++++[m
+ ...01 \342\200\224 Lenovo ThinkPad T14 (Gen 2).md" |  94 [32m+++++++++++++[m
+ 04-Equipment/INTELUX-CL-01-M910t.md                |  67 [32m+++++++++[m
+ 04-Equipment/INTELUX-FW-01-M72e-Planned.md         |  85 [32m+++++++++++[m
+ 04-Equipment/INTELUX-HV-01-M920t.md                |  62 [32m++++++++[m
+ ...ED-01 \342\200\224 Apple MacBook Pro (2012).md" |  78 [32m+++++++++++[m
+ ...-01 \342\200\224 Apple Mac Mini (Late 2014).md" |  62 [32m++++++++[m
+ 04-Equipment/MacBook Air (2020).md                 |  81 [32m+++++++[m[31m----[m
+ 04-Equipment/RED-01-Build-History.md               |  97 [32m+++++++++++++[m
+ 04-Equipment/TP-Link AX3200.md                     |  70 [32m++++++[m[31m---[m
+ 04-Equipment/TP-Link AX50.md                       |  70 [32m++++++[m[31m---[m
+ 05-OS/Linux Mint.md                                |   0
+ 05-OS/Mac OS 12 Monterey.md                        |   0
+ 05-OS/Mac OS 26 Tahoe.md                           |  38 [32m+++++[m
+ 05-OS/Parrot OS.md                                 |  59 [32m++++++++[m
+ 05-OS/Ubuntu Jammy Jellyfish.md                    |  66 [32m+++++++++[m
+ 05-OS/Windows 10 Pro.md                            |  55 [32m++++++++[m
+ 05-OS/Windows 11 Pro.md                            |  61 [32m++++++++[m
+ 06-VM/Oracle VirtualBox.md                         |   3 [31m-[m
+ 06-VM/VM-Registry.md                               |  56 [32m++++[m[31m----[m
+ 06-VM/VMware.md                                    |   2 [31m-[m
+ 07-Diagrams/Diagrams-Index.md                      |  35 [32m+++++[m
+ 08-Screenshots/INTELUX-Network-Topology.png        | Bin [31m0[m -> [32m423989[m bytes
+ 08-Screenshots/Kill-Chain-A-Flow.png               | Bin [31m0[m -> [32m317333[m bytes
+ 08-Screenshots/Kill-Chain-B-Flow.png               | Bin [31m0[m -> [32m374032[m bytes
+ 08-Screenshots/SRV-01-Docker-Stack.png             | Bin [31m0[m -> [32m363304[m bytes
+ .../(Phase 0) Isolated Zone.md                     |   4 [32m+[m[31m-[m
+ ...e Architecture & Cybersecurity Lab Isolation.md |   4 [32m+[m[31m-[m
+ .../(Phase 0) Trusted Zone.md                      |   0
+ 99-Retired/Kali Cyber Lab Rebuild.md               |   4 [32m+[m[31m-[m
+ 99-Retired/Kali Linux.md                           |  42 [32m++++++[m
+ 99-Retired/Linux Mint.md                           |  36 [32m+++++[m
+ 99-Retired/Mac OS 12 Monterey.md                   |  47 [32m+++++++[m
+ .../Mac mini 2014.md                               |   0
+ {04-Equipment => 99-Retired}/MacBook Pro (2012).md |   1 [31m-[m
+ 99-Retired/Oracle VirtualBox.md                    |  57 [32m++++++++[m
+ 99-Retired/VMware.md                               |  57 [32m++++++++[m
+ 99-Retired/Virtualized Cyber Lab Host.md           | 118 [32m++++++++++++++++[m
+ 05-OS/Kali Linux.md => INTELUX-Network-Topology.md |   0
+ 45 files changed, 1600 insertions(+), 370 deletions(-)
