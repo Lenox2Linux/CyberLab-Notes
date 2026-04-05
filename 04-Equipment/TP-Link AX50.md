@@ -1,23 +1,59 @@
-ZONE: [[(Phase 0) Isolated Zone]]
+# 📡 TP-Link AX50 — Lab Uplink Router
 
-**Archer AX50**
-**AX3000 Dual Band Gigabit Wi-Fi 6 Router**
+**Updated:** 2026-04-05 **Status:** Active — lab WAN uplink **Lab Role:** Provides internet feed from AX3200 into pfSense
 
+---
 
-**Specs & Features:**
+## Overview
 
-- **Wi-Fi 6 Technology Featuring Intel:** Wi-Fi 6 technology achieves up to 3x faster speeds, higher capacity and lower latency compared to the previous generation of Wi-Fi 5 while Intel's dual-core CPU ensures your experience is smooth and buffer-free.
-- **Next-Gen 3 Gbps Speeds:** Reach incredible speeds up to 3 Gbps (2402 Mbps on 5 GHz band and 574 Mbps on 2.4 GHz band) for faster streaming and gaming like you have never experienced before.
-- **Connect More Devices:**  Simultaneously communicate more data to more devices using revolutionary OFDMA and MU-MIMO technology, letting you connect 40+ devices.
-- **Minimize Lag for All Devices and Applications:** Experience ultra-smooth entertainment whether you are streaming 4K videos, gaming online, or even video chatting with up to 75% reduced lag.
-- **More Reliable Coverage:** Achieve the strongest, most reliable Wi-Fi coverage up to 2,000 sq. ft. with Archer AX50 as it focuses signal strength to your devices using Beamforming technology and 4 antennas.
-- **Homecare:** Protect your family with a lifetime free subscription of TP-Link’s Homecare featuring next-level antivirus, robust parental controls and QoS.
-- **Increased Battery Life for Devices:** Target Wake Time technology reduces your devices' power consumption to extend battery life.
-- **Easy Setup:** Set up your router in minutes with the powerful TP-Link Tether App.
-- **Backward Compatible:** Archer AX50 supports all previous 802.11 standards and all Wi-Fi devices.
+The TP-Link AX50 sits between the home gateway (AX3200) and the INTELUX pfSense firewall. It passes internet connectivity from the AX3200 into the lab network. pfSense (VM on HV-01) handles all firewall, VLAN routing, and security functions — the AX50 is purely an uplink device in this architecture.
 
-**Configurations:**
+---
 
-- Drop/Ignore ICMP (Ping).
-- Disabled **WPS**.
-- Disabled **UPnP**.
+## Network Role
+
+```
+[TP-Link AX3200] ← Home gateway / ISP feed
+  │
+[TP-Link AX50]   ← Lab uplink — passes WAN to pfSense
+  │
+[pfSense VM — HV-01] ← INTELUX firewall / VLAN router
+  │
+[INTELUX VLANs]
+```
+
+---
+
+## Device Details
+
+|Field|Value|
+|---|---|
+|Model|TP-Link AX50|
+|Role|Lab WAN uplink router|
+|WAN Source|TP-Link AX3200 (home gateway)|
+|WAN Destination|pfSense VM on HV-01|
+|INTELUX VLAN|None — upstream of pfSense|
+|Wazuh Agent|None|
+
+---
+
+## Phase 0 Reference
+
+In Phase 0, the AX50 was deployed in router-behind-router mode to create a Double NAT isolation barrier between the lab and the trusted home network. It was the primary lab isolation mechanism before pfSense replaced it in that role.
+
+The AX50's security and isolation responsibilities have been fully handed off to pfSense. Its current role is simply passing WAN connectivity into the lab.
+
+---
+
+## Planned Changes
+
+When pfSense migrates from VM (HV-01) to bare-metal M72e, the AX50 remains in place — same uplink role, new downstream device.
+
+---
+
+## Related Notes
+
+- [[TP-Link AX3200]]
+- [[INTELUX-FW-01-M72e-Planned]]
+- [[Lab-Architecture-Overview]]
+- [[(Phase 0) Multi-Tiered Defensive Architecture & Cybersecurity Lab Isolation]]

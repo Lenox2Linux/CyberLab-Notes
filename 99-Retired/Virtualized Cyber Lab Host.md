@@ -1,6 +1,19 @@
+> [!NOTE] Phase 0 — Archived Reference This document describes the original CyberLab architecture (early 2026) prior to the INTELUX Systems migration. The Double NAT / TP-Link topology described here has been fully replaced. See [[Lab-Architecture-Overview]] and [[Multi-Tiered-Defensive-Architecture]] for the current INTELUX environment.
+> 
+> **What changed:**
+> 
+> - TP-Link AX50/AX3200 → pfSense firewall (VLAN-based segmentation)
+> - VirtualBox → Proxmox VE (HV-01, CL-01)
+> - Flat 192.168.1.x → 10.100.x.x six-VLAN architecture
+> - Kali on MacBook Pro → Parrot OS on RED-01 (VLAN 50 STAGING)
+> - No SIEM → Wazuh v4.14.3
+> - No IDS → Suricata on pfSense WAN
+
+---
+
 ## **Project Overview**
 
-Designed and implemented a Defense in Depth network architecture to segment a high-risk cybersecurity research lab from a primary residential network. The goal was to establish a “one-way mirror” environment where [[(Phase 0) Isolated Zone]] and IoT systems remain fully functional but are logically and physically prevented from lateral movement into the [[(Phase 0) Trusted Zone]] network.
+Designed and implemented a Defense in Depth network architecture to segment a high-risk cybersecurity research lab from a primary residential network. The goal was to establish a "one-way mirror" environment where [[(Phase 0) Isolated Zone]] and IoT systems remain fully functional but are logically and physically prevented from lateral movement into the [[(Phase 0) Trusted Zone]] network.
 
 As part of this build, I repurposed legacy hardware into dedicated lab systems, including my [[Kali Cyber Lab Rebuild]] to serve as a controlled attack node inside the isolated environment.
 
@@ -11,14 +24,15 @@ As part of this build, I repurposed legacy hardware into dedicated lab systems, 
 ### **Hardware & Topology Phase**
 
 - **Gateway Overhaul:** Replaced restrictive ISP equipment with a [[TP-Link AX3200]] as the primary gateway for the trusted zone.
-- **Tiered Segmentation:** Deployed a [[TP-Link AX50]] in a “router-behind-router” configuration to create a Double NAT isolation layer.
+- **Tiered Segmentation:** Deployed a [[TP-Link AX50]] in a "router-behind-router" configuration to create a Double NAT isolation layer.
 - **Dedicated Lab Systems:** Rebuilt legacy machines into hardened lab endpoints to avoid mixing personal and experimental workloads.
+
 ---
 
 ### **Lab Equipment**
 
-- [[Mac mini (2014)]] — Virtualization host
-- [[MacBook Pro (2012)]] — Kali lab workstation
+- [[INTELUX-SRV-01 — Apple Mac Mini (Late 2014)]] — Virtualization host
+- [[INTELUX-RED-01 — Apple MacBook Pro (2012)]] — Kali lab workstation
 - [[TP-Link AX50]] — Lab router
 - [[TP-Link AX3200]] — Primary gateway
 
@@ -28,7 +42,7 @@ As part of this build, I repurposed legacy hardware into dedicated lab systems, 
 
 To ensure the lab environment started from a known, trusted baseline, I rebuilt the MacBook Pro (2012) from scratch.
 
-I first downloaded the macOS Monterey installer and created a bootable USB using Terminal’s `createinstallmedia` utility. After validating the installer media, I wiped the internal drive using Disk Utility to remove all residual data and configurations.
+I first downloaded the macOS Monterey installer and created a bootable USB using Terminal's `createinstallmedia` utility. After validating the installer media, I wiped the internal drive using Disk Utility to remove all residual data and configurations.
 
 Once macOS recovery and disk preparation were complete, I flashed an Ubuntu installation image to a USB drive using BalenaEtcher and configured the system to boot from external media. I then performed a clean Ubuntu installation, creating a dedicated Linux workstation for administration, monitoring, and controlled attack simulations.
 
@@ -81,6 +95,7 @@ Static addressing on the internal segment ensured consistent VM-to-VM connectivi
 - Tested firewall boundaries between zones
 - Audited DHCP and reservation behavior
 - Confirmed absence of lateral movement paths
+
 ---
 
 ## **Lessons Learned**

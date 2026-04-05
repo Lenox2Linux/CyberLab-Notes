@@ -12,12 +12,12 @@ The Trusted Zone covers all production lab infrastructure. Wazuh agents are depl
 
 ## VLAN 10 — MGMT
 
-| Asset | IP | OS | Role |
-|---|---|---|---|
-| pfSense | 10.100.10.1 | pfSense CE | Firewall / Router |
-| HV-01 | 10.100.10.101 | Proxmox VE | Primary hypervisor (M920t) |
-| ADM-01 | 10.100.10.100 | Windows 11 | Admin workstation (ThinkPad T14) |
-| SW-01 | 10.100.10.239 | — | Managed switch |
+| Asset   | OS         | Role                             |
+| ------- | ---------- | -------------------------------- |
+| pfSense | pfSense CE | Firewall / Router                |
+| HV-01   | Proxmox VE | Primary hypervisor (M920t)       |
+| ADM-01  | Windows 11 | Admin workstation (ThinkPad T14) |
+| SW-01   | —          | Managed switch                   |
 
 ### ADM-01 Notes
 - Wazuh agent: T2 / ID 008
@@ -29,23 +29,23 @@ The Trusted Zone covers all production lab infrastructure. Wazuh agents are depl
 
 ## VLAN 20 — SERVICES
 
-| Asset | IP | OS | Role |
-|---|---|---|---|
-| SRV-01 | 10.100.20.101 | Ubuntu / Docker | Primary services host (Mac Mini) |
-| DC-01 | 10.100.20.102 | Windows Server | Domain Controller — **PLANNED** |
-| WEB-01 | 10.100.20.103 | TBD | Internal web server |
+| Asset  | OS              | Role                             |
+| ------ | --------------- | -------------------------------- |
+| SRV-01 | Ubuntu / Docker | Primary services host (Mac Mini) |
+| DC-01  | Windows Server  | Domain Controller — **PLANNED**  |
+| WEB-01 | TBD             | Internal web server              |
 
 ### SRV-01 Services
 
-| Service | Container Name | Access |
-|---|---|---|
-| Wazuh Manager | single-node-wazuh.manager-1 | 1514/1515/55000 |
-| Wazuh Dashboard | single-node-wazuh.dashboard-1 | 8444 |
-| Wazuh Indexer | single-node-wazuh.indexer-1 | 9200 |
-| Caddy | caddy | *.intelux.local |
-| Pi-hole | pihole | pihole.intelux.local |
-| Nextcloud | nextcloud | nextcloud.intelux.local |
-| Vaultwarden | vaultwarden | vault.intelux.local |
+| Service         | Container Name                |
+| --------------- | ----------------------------- |
+| Wazuh Manager   | single-node-wazuh.manager-1   |
+| Wazuh Dashboard | single-node-wazuh.dashboard-1 |
+| Wazuh Indexer   | single-node-wazuh.indexer-1   |
+| Caddy           | caddy                         |
+| Pi-hole         | pihole                        |
+| Nextcloud       | nextcloud                     |
+| Vaultwarden     | vaultwarden                   |
 
 ### Key File Paths (SRV-01)
 ```
@@ -59,7 +59,7 @@ The Trusted Zone covers all production lab infrastructure. Wazuh agents are depl
 - Local certs via `local_certs`
 - Wazuh CA cert mounted for `tls_trust_pool file`
 - `tls_insecure_skip_verify` removed
-- Pi-hole DNS records pointing to 10.100.20.101
+- Pi-hole DNS records pointing to 10.100.20.x
 - Tailscale was overwriting `/etc/resolv.conf` — fixed with `sudo tailscale set --accept-dns=false`
 - Reliable restart: `docker stop caddy && docker rm caddy && docker compose up -d caddy`
 - ⚠️ Never run `docker exec caddy caddy fmt` — stderr redirect bug wipes Caddyfile to 1 byte
@@ -68,12 +68,12 @@ The Trusted Zone covers all production lab infrastructure. Wazuh agents are depl
 
 ## VLAN 30 — CLIENTS
 
-| Asset | IP | OS | Role |
-|---|---|---|---|
-| CL-01 | 10.100.30.102 | Proxmox VE | Client hypervisor (M910t) |
-| WKS-01 | 10.100.10.102 (VM101) | TBD | Workstation — ossec.conf update pending |
-| WKS-03 | 10.100.30.11 | TBD | Kill Chain A target |
-| WKS-04 | TBD | TBD | Out of scope (Kill Chain A) |
+| Asset  | OS         | Role                                    |
+| ------ | ---------- | --------------------------------------- |
+| CL-01  | Proxmox VE | Client hypervisor (M910t)               |
+| WKS-01 | TBD        | Workstation — ossec.conf update pending |
+| WKS-03 | TBD        | Kill Chain A target                     |
+| WKS-04 | TBD        | Out of scope (Kill Chain A)             |
 
 ---
 

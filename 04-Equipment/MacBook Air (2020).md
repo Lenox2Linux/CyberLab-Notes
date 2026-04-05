@@ -1,25 +1,56 @@
-ZONE: [[(Phase 0) Trusted Zone]]
+# 💻 MacBook Air (2020) — Personal Device
 
-**MacBook Air (13-inch)**
+**Updated:** 2026-04-05 **Status:** Active — personal use **Lab Role:** Limited — Tailscale remote access only
 
-**Specs & Features:**
+---
 
-- M1 Chip
-- 8-core CPU with 4 perform­ance cores and 4 efficiency cores.
-- 8GB unified memory.
-- 256GB SSD.
-Two Thunderbolt / USB 4 ports with support for:
-- Charging
-- DisplayPort
-- Thunderbolt 3 (up to 40Gb/s)
-- USB 4 (up to 40Gb/s)
-- USB 3.1 Gen 2 (up to 10Gb/s)
-- 3.5 mm headphone jack
-- 802.11ax Wi-Fi 6 wireless networking
-- IEEE 802.11a/b/g/n/ac compatible.
-- Bluetooth 5.0 wireless technology.
+## Overview
 
-**Configurations:**
+The MacBook Air (2020) is a personal machine running macOS 26 Tahoe. It is not part of the INTELUX lab infrastructure but connects to select lab services remotely via Tailscale for personal use.
 
-- [[Mac OS 26 Tahoe]] host.
-- [[VMware]]
+---
+
+## Hardware Specifications
+
+|Field|Value|
+|---|---|
+|Model|MacBook Air (2020)|
+|Chip|Apple M1|
+|RAM|8 GB|
+|Storage|256 GB (base config)|
+|OS|macOS 26 Tahoe|
+
+---
+
+## Lab Connectivity
+
+|Method|Purpose|
+|---|---|
+|Tailscale|Remote access to INTELUX services|
+|Nextcloud|Personal file sync via `nextcloud.intelux.local`|
+|General|Light personal use of self-hosted services|
+
+---
+
+## Security Notes
+
+- Not a managed INTELUX endpoint
+- No Wazuh agent installed
+- Not on any INTELUX VLAN — Tailscale only
+- Tailscale ACLs must be reviewed before M900 Tiny go-live to ensure MacBook Air is not inadvertently granted access to RED machine segments
+
+---
+
+## What It Is NOT Used For
+
+- Lab management (that's ADM-01)
+- Red team operations (that's RED-01)
+- Any INTELUX VLAN-connected activity
+
+---
+
+## Related Notes
+
+- [[Mac OS 26 Tahoe]]
+- [[Equipment-Inventory]]
+- [[HOME-SRV-01-M900-Tiny]]

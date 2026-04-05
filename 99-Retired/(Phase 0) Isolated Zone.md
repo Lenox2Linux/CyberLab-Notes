@@ -19,10 +19,10 @@ This page tracks all physical and network infrastructure used in the cybersecuri
 
 ### Compute Hosts
 
-- [[Mac mini (2014)]]  
+- [[INTELUX-SRV-01 — Apple Mac Mini (Late 2014)]]  
     Role: Virtualization host  
     Primary Use: VirtualBox lab, VM testing
     
-- [[MacBook Pro (2012)]]  
+- [[INTELUX-RED-01 — Apple MacBook Pro (2012)]]  
     Role: Linux/Kali workstation  
     Primary Use: Attack platform, admin tasks

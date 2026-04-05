@@ -21,4 +21,3 @@ ZONE: [[(Phase 0) Isolated Zone]]
 - 2x 4GB 1600MHz DDR3 memory.
 - [[Kali Linux]] host.
 
-

@@ -2,7 +2,7 @@
 
 ## **Project Overview**
 
-Converted a [[MacBook Pro (2012)]] into a dedicated [[Kali Linux]] lab workstation for Linux administration and cybersecurity practice. The objective was to establish a clean, repeatable baseline system for controlled experimentation, tooling practice, and operating system hardening.
+Converted a [[INTELUX-RED-01 — Apple MacBook Pro (2012)]] into a dedicated [[Kali Linux]] lab workstation for Linux administration and cybersecurity practice. The objective was to establish a clean, repeatable baseline system for controlled experimentation, tooling practice, and operating system hardening.
 
 This project focused on rebuilding legacy hardware into a stable learning platform using modern deployment workflows.
 
@@ -38,7 +38,7 @@ This project focused on rebuilding legacy hardware into a stable learning platfo
 
 **Hardware**
 
-- [[MacBook Pro (2012)]]
+- [[INTELUX-RED-01 — Apple MacBook Pro (2012)]]
 
 **Boot Media**
 

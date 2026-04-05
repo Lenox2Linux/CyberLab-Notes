@@ -29,7 +29,7 @@ INTELUX is modeled after a real enterprise SOC/NOC environment. The design follo
 - 6 VLANs enforced via pfSense + SW-01
 - Inter-VLAN routing controlled — no implicit trust between segments
 - **RISK-001 CLOSED (2026-03-31):** PORTAL→SERVICES lateral movement mitigated
-  - TCP 443 pinhole to WEB-01 (10.100.20.103) only
+  - TCP 443 pinhole to WEB-01 (10.100.20.x) only
   - Rest of SERVICES blocked from PORTAL
   - ISO 27001 A.13.1.3 satisfied
 
@@ -44,7 +44,7 @@ INTELUX is modeled after a real enterprise SOC/NOC environment. The design follo
 - Vaultwarden MFA enabled
 
 ### Layer 5 — Identity & Access (Planned)
-- DC-01 pending deploy (10.100.20.102, VLAN 20)
+- DC-01 pending deploy (10.100.20.x, VLAN 20)
 - Will provide AD DS, DNS, Group Policy for INTELUX domain
 
 ---
@@ -69,14 +69,14 @@ INTELUX is modeled after a real enterprise SOC/NOC environment. The design follo
 ## Kill Chain Scenarios
 
 ### Kill Chain A — STAGING Insider Threat
-- Attacker: RED-01 (10.100.50.100, VLAN 50)
-- Target: WKS-03 (10.100.30.11, VLAN 30)
+- Attacker: RED-01 (10.100.50.x, VLAN 50)
+- Target: WKS-03 (10.100.30.x, VLAN 30)
 - Method: Black box — nmap SYN scan (`-Pn` required, WKS-03 blocks ping)
 - Status: **In progress**
 
 ### Kill Chain B — PORTAL Kiosk Pivot (Planned)
-- Attacker: INTELUX-KSK-01 (10.100.40.101, VLAN 40)
-- Path: TCP 443 pinhole → WEB-01 (10.100.20.103) → DC-01 crown jewel
+- Attacker: INTELUX-KSK-01 (10.100.40.x, VLAN 40)
+- Path: TCP 443 pinhole → WEB-01 (10.100.20.x) → DC-01 crown jewel
 - Prerequisite: VLAN 60 DMZ live, WEB-01 deployed
 - Status: **Blocked — awaiting VLAN 60**
 

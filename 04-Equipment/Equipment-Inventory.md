@@ -9,67 +9,55 @@
 ## Active Hardware
 
 ### HV-01 — Primary Hypervisor
-| Field | Value |
-|---|---|
-| Model | Lenovo ThinkCentre M920t |
-| Role | Proxmox VE — primary hypervisor |
-| IP | 10.100.10.101 (VLAN 10 MGMT) |
-| Wazuh Agent | 290 / ID 010 |
-| Notes | Hosts most lab VMs |
+| Field | Value                           |
+| ----- | ------------------------------- |
+| Model | Lenovo ThinkCentre M920t        |
+| Role  | Proxmox VE — primary hypervisor |
+| Notes | Hosts most lab VMs              |
 
 ### CL-01 — Client Hypervisor
-| Field | Value |
-|---|---|
-| Model | Lenovo ThinkCentre M910t |
-| Role | Proxmox VE — client VM host |
-| IP | 10.100.30.102 (VLAN 30 CLIENTS) |
-| Wazuh Agent | 190 / ID 011 |
+| Field       | Value                       |
+| ----------- | --------------------------- |
+| Model       | Lenovo ThinkCentre M910t    |
+| Role        | Proxmox VE — client VM host |
 
 ### SRV-01 — Services Host
-| Field | Value |
-|---|---|
-| Model | Mac Mini (Ubuntu 22.04 LTS) |
-| Role | Docker services — Wazuh, Caddy, Pi-hole, Nextcloud, Vaultwarden |
-| IP | 10.100.20.101 (VLAN 20 SERVICES) |
-| Wazuh Agent | SV / ID 009 |
-| Notes | Primary lab services node |
+| Field       | Value                                                           |
+| ----------- | --------------------------------------------------------------- |
+| Model       | Mac Mini (Ubuntu 22.04 LTS)                                     |
+| Role        | Docker services — Wazuh, Caddy, Pi-hole, Nextcloud, Vaultwarden |
+| Notes       | Primary lab services node                                       |
 
 ### ADM-01 — Admin Workstation
-| Field | Value |
-|---|---|
-| Model | ThinkPad T14 |
-| OS | Windows 11 Pro |
-| Role | Admin workstation / personal laptop |
-| IP | 10.100.10.100 (VLAN 10 MGMT) |
-| Wazuh Agent | T2 / ID 008 |
-| ⚠️ Warning | Dual-homing risk — disable WiFi before ethernet during lab sessions |
+| Field       | Value                                                               |
+| ----------- | ------------------------------------------------------------------- |
+| Model       | ThinkPad T14                                                        |
+| OS          | Windows 11 Pro                                                      |
+| Role        | Admin workstation / personal laptop                                 |
+| ⚠️ Warning  | Dual-homing risk — disable WiFi before ethernet during lab sessions |
 
 ### RED-01 — Red Team Machine
-| Field | Value |
-|---|---|
-| Model | MacBook Pro (2012) |
-| OS | Parrot OS |
-| User | jcarter |
-| IP | 10.100.50.100 (VLAN 50 STAGING) |
-| CPU | Intel HD 3000 (SNB GT2) |
-| RAM | 7.8GB |
-| Battery | Degraded — replacement ordered |
-| Fan Control | macfanctld installed |
-| Wazuh Agent | None (intentional) |
+| Field       | Value                          |
+| ----------- | ------------------------------ |
+| Model       | MacBook Pro (2012)             |
+| OS          | Parrot OS                      |
+| CPU         | Intel HD 3000 (SNB GT2)        |
+| RAM         | 7.8GB                          |
+| Battery     | Degraded — replacement ordered |
+| Fan Control | macfanctld installed           |
+| Wazuh Agent | None (intentional)             |
 
 ### pfSense — Firewall
-| Field | Value |
-|---|---|
-| Model | Running on M72e (VM currently, bare-metal planned) |
-| Role | Firewall, router, DHCP, Suricata IDS |
-| IP | 10.100.10.1 (VLAN 10 MGMT) |
+| Field | Value                                                                              |
+| ----- | ---------------------------------------------------------------------------------- |
+| Model | Running on M72e (VM currently, bare-metal planned)                                 |
+| Role  | Firewall, router, DHCP, Suricata IDS                                               |
 | Notes | Phase 2: Migrate to M72e bare-metal, onboard NIC for LAN + Realtek USB NIC for WAN |
 
 ### SW-01 — Managed Switch
-| Field | Value |
-|---|---|
-| IP | 10.100.10.239 (VLAN 10 MGMT) |
-| Role | VLAN trunk / access port management |
+| Field | Value                               |
+| ----- | ----------------------------------- |
+| Role  | VLAN trunk / access port management |
 
 ---
 

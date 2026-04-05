@@ -12,10 +12,10 @@ The Isolated Zone contains all untrusted or adversarial systems. No Wazuh agents
 
 ## VLAN 50 — STAGING (Red Team)
 
-| Asset | IP | OS | Role |
-|---|---|---|---|
-| RED-01 | 10.100.50.100 | Parrot OS | Primary red team ops machine |
-| RED-02 | TBD | TBD | Secondary (planned) |
+| Asset  | OS        | Role                         |
+| ------ | --------- | ---------------------------- |
+| RED-01 | Parrot OS | Primary red team ops machine |
+| RED-02 | TBD       | Secondary (planned)          |
 
 ### RED-01 Hardware Details
 - **Model:** MacBook Pro (2012)
@@ -36,9 +36,9 @@ The Isolated Zone contains all untrusted or adversarial systems. No Wazuh agents
 
 ## VLAN 60 — DMZ (Planned)
 
-| Asset | IP | Role |
-|---|---|---|
-| WEB-01 | 10.100.60.10 | Web server — Kill Chain B target |
+| Asset  | Role                             |
+| ------ | -------------------------------- |
+| WEB-01 | Web server — Kill Chain B target |
 
 **Status:** Not yet deployed. Requires pfSense VLAN 60 config + SW-01 trunk + WEB-01 VM build.
 
@@ -56,8 +56,8 @@ The Isolated Zone contains all untrusted or adversarial systems. No Wazuh agents
 ## Active Operations
 
 ### Kill Chain A — In Progress
-- **From:** RED-01 (10.100.50.100)
-- **Target:** WKS-03 (10.100.30.11)
+- **From:** RED-01 (10.100.50.x)
+- **Target:** WKS-03 (10.100.30.x)
 - **Methodology:** Black box
 - **Current step:** nmap SYN scan — `-Pn` flag required (WKS-03 not responding to ping)
 - **Out of scope:** WKS-04

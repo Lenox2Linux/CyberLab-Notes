@@ -31,33 +31,19 @@
 | 50 | STAGING | 10.100.50.0/24 | Red Team — RED-01, RED-02 |
 | 60 | DMZ | 10.100.60.0/24 | Web-facing — WEB-01 (planned) |
 
-### Confirmed IP Registry
-
-| Hostname | IP | VLAN | Role |
-|---|---|---|---|
-| pfSense | 10.100.10.1 | 10 | Firewall / Router |
-| HV-01 | 10.100.10.101 | 10 | Proxmox Hypervisor |
-| ADM-01 | 10.100.10.100 | 10 | Admin Workstation |
-| SW-01 | 10.100.10.239 | 10 | Managed Switch |
-| SRV-01 | 10.100.20.101 | 20 | Docker Services Host |
-| DC-01 | 10.100.20.102 | 20 | Domain Controller (planned) |
-| WEB-01 | 10.100.20.103 / 10.100.60.10 | 20/60 | Web Server |
-| CL-01 | 10.100.30.102 | 30 | Proxmox Hypervisor (Client VMs) |
-| RED-01 | 10.100.50.100 | 50 | Red Team Ops Machine |
-
 ---
 
 ## Core Services (Live)
 
-| Service | Host | Access URL | Port(s) |
-|---|---|---|---|
-| Wazuh SIEM | SRV-01 | wazuh.intelux.local | 8444 (dashboard), 1514/1515, 55000 |
-| Caddy Reverse Proxy | SRV-01 | *.intelux.local | 80/443 |
-| Pi-hole DNS | SRV-01 | pihole.intelux.local | 53 |
-| Nextcloud | SRV-01 | nextcloud.intelux.local | — |
-| Vaultwarden | SRV-01 | vault.intelux.local | — |
-| Suricata IDS | pfSense WAN | — | EVE JSON → rsyslog → Wazuh |
-| Tailscale | SRV-01 / ts-sub-01 | — | Subnet: 10.100.0.0/16 |
+| Service             | Host               |
+| ------------------- | ------------------ |
+| Wazuh SIEM          | SRV-01             |
+| Caddy Reverse Proxy | SRV-01             |
+| Pi-hole DNS         | SRV-01             |
+| Nextcloud           | SRV-01             |
+| Vaultwarden         | SRV-01             |
+| Suricata IDS        | pfSense WAN        |
+| Tailscale           | SRV-01 / ts-sub-01 |
 
 ---
 
@@ -71,8 +57,8 @@
 
 ## Planned / In Progress
 
-- [ ] DC-01 deploy (VM 101, 10.100.20.102, VLAN 20)
-- [ ] VLAN 60 DMZ — pfSense + SW-01 + WEB-01 (10.100.60.10)
+- [ ] DC-01 deploy (VM 101, 10.100.20.x, VLAN 20)
+- [ ] VLAN 60 DMZ — pfSense + SW-01 + WEB-01 (10.100.60.x)
 - [ ] East-west Docker isolation on SRV-01 (blocked — restore port bindings first)
 - [ ] pfSense migration to M72e bare-metal
 - [ ] Wazuh expansion post DC-01
