@@ -1,20 +1,17 @@
 # 🏗️ INTELUX Lab Architecture Overview
 
-**Vault Last Updated:** 2026-04-05
-**Lab Name:** INTELUX Systems, Inc.
-**Internal Domain:** `intelux.local`
-**Owner:** Raynard A. Porter (`aredeebee`)
-**Status:** Active — Sprint in progress
+**Vault Last Updated:** 2026-04-05 **Lab Name:** INTELUX Systems, Inc. **Internal Domain:** `intelux.local` **Owner:** aredeebee **Status:** Active — Sprint in progress
 
 ---
 
 ## Evolution Summary
 
-| Phase | Period | Description |
+|Phase|Period|Description|
 |---|---|---|
-| Phase 0 | Early 2026 | Flat network, single subnet 192.168.1.x, VirtualBox-based |
-| Phase 1 | March 2026 | Full VLAN migration to 10.100.x.x, Proxmox hypervisors, pfSense firewall |
-| Phase 2 | April 2026+ | Active Defense — Suricata IDS, Wazuh SIEM, GRC documentation, Red Team ops |
+|Phase 0|Early 2026|Flat network, single subnet, VirtualBox-based|
+|Phase 1|March 2026|Full VLAN migration, Proxmox hypervisors, pfSense firewall|
+|Phase 2|April 2026+|Active Defense — Suricata IDS, Wazuh SIEM, GRC documentation, Red Team ops|
+|Phase 2.1|April 2026|DC-01 deployed — intelux.local domain live, WKS-03 domain joined|
 
 ---
 
@@ -22,54 +19,79 @@
 
 ### VLAN Topology
 
-| VLAN | Name | Subnet | Purpose |
+|VLAN|Name|Purpose|
+|---|---|---|
+|10|MGMT|pfSense, HV-01, ADM-01, SW-01, DC-01|
+|20|SERVICES|SRV-01, Wazuh, Caddy, WEB-01 (planned)|
+|30|CLIENTS|CL-01, WKS-03, WKS-04|
+|40|PORTAL|Kiosk simulation — KSK-01 (planned)|
+|50|STAGING|Red Team — RED-01, RED-02 (planned)|
+|60|DMZ|Web-facing — WEB-01 (planned)|
+
+### Confirmed Device Registry
+
+|Device|VLAN|Role|Status|
 |---|---|---|---|
-| 10 | MGMT | 10.100.10.0/24 | Management — pfSense, HV-01, ADM-01, SW-01 |
-| 20 | SERVICES | 10.100.20.0/24 | SRV-01, Wazuh, Caddy, DC-01 (planned) |
-| 30 | CLIENTS | 10.100.30.0/24 | CL-01, workstations WKS-01 through WKS-04 |
-| 40 | PORTAL | 10.100.40.0/24 | Kiosk simulation — INTELUX-KSK-01 |
-| 50 | STAGING | 10.100.50.0/24 | Red Team — RED-01, RED-02 |
-| 60 | DMZ | 10.100.60.0/24 | Web-facing — WEB-01 (planned) |
+|pfSense (FW-01)|10|Firewall / Router / Suricata|Active|
+|HV-01 (M920q)|10|Proxmox hypervisor|Active|
+|ADM-01 (T14)|10|Admin workstation|Active|
+|SW-01 (GS308E)|10|Managed switch|Active|
+|DC-01 (VM 103)|10|AD DS — intelux.local|✅ Active — deployed|
+|SRV-01 (Mac Mini)|20|Docker services host|Active|
+|WEB-01 (VM 104)|20/60|Intranet web server|Planned|
+|CL-01 (M910q)|30|Proxmox hypervisor|Active|
+|WKS-03 (VM 101)|30|Victim workstation — domain joined|Active|
+|WKS-04 (VM 102)|30|Victim workstation|Active (powered off)|
+|KSK-01 (VM 105)|40|Portal kiosk|Planned|
+|RED-01 (MBP 2012)|50|Red team — Parrot OS|Active|
+|RED-02 (VM 150)|50|Red team VM|Planned|
 
 ---
 
 ## Core Services (Live)
 
-| Service             | Host               |
-| ------------------- | ------------------ |
-| Wazuh SIEM          | SRV-01             |
-| Caddy Reverse Proxy | SRV-01             |
-| Pi-hole DNS         | SRV-01             |
-| Nextcloud           | SRV-01             |
-| Vaultwarden         | SRV-01             |
-| Suricata IDS        | pfSense WAN        |
-| Tailscale           | SRV-01 / ts-sub-01 |
+|Service|Host|Status|
+|---|---|---|
+|Wazuh SIEM v4.14.3|SRV-01|Active|
+|Caddy Reverse Proxy|SRV-01|Active|
+|Pi-hole DNS|SRV-01|Active|
+|Grafana|SRV-01|Active|
+|Prometheus|SRV-01|Active|
+|Nextcloud|SRV-01|Active|
+|Vaultwarden|SRV-01|Active|
+|Uptime Kuma|SRV-01|Active|
+|Suricata IDS|pfSense WAN|Active|
+|Tailscale|SRV-01|Active|
+|Active Directory|DC-01|✅ Active|
 
 ---
 
 ## Remote Access
 
-- **Primary:** Tailscale subnet router (`ts-sub-01`) advertising `10.100.0.0/16`
-- **Admin rule:** Disable WiFi on ADM-01 before connecting ethernet during lab sessions (dual-homing risk)
-- **Wazuh API:** Port 55000 locked to MGMT VLAN only
+- **Primary:** Tailscale subnet router advertising lab subnet
+- **Admin rule:** Disable WiFi on ADM-01 before connecting ethernet during lab sessions
+- **Wazuh API:** Locked to MGMT VLAN only
 
 ---
 
-## Planned / In Progress
+## Active / In Progress
 
-- [ ] DC-01 deploy (VM 101, 10.100.20.x, VLAN 20)
-- [ ] VLAN 60 DMZ — pfSense + SW-01 + WEB-01 (10.100.60.x)
-- [ ] East-west Docker isolation on SRV-01 (blocked — restore port bindings first)
+- [x] DC-01 deployed — intelux.local domain live
+- [x] WKS-03 domain joined to intelux.local
+- [ ] DC-01 Wazuh agent install
+- [ ] VLAN 60 DMZ — pfSense + SW-01 + WEB-01
+- [ ] East-west Docker isolation on SRV-01
 - [ ] pfSense migration to M72e bare-metal
-- [ ] Wazuh expansion post DC-01
-- [ ] M900 Tiny home server (Jellyfin, Immich, Nextcloud — Tailscale-only)
+- [ ] Kill Chain A exercise — recon phase in progress
+- [ ] M900 Tiny home server
 
 ---
 
 ## Related Notes
 
-- [[(Phase 0) Multi-Tiered Defensive Architecture & Cybersecurity Lab Isolation]]
-- [[(Phase 0) Isolated Zone]]
-- [[(Phase 0) Trusted Zone]]
-- [[pfSense-Firewall]]
-- [[SRV-01-Services]]
+- [[Multi-Tiered-Defensive-Architecture]]
+- [[Trusted-Zone]]
+- [[Isolated-Zone]]
+- [[VM-Registry]]
+- [[INTELUX-DC-01]]
+- [[Incidents-And-Lessons]]
