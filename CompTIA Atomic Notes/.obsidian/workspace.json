@@ -1,0 +1,473 @@
+{
+  "main": {
+    "id": "8d0fc25c45c24fb2",
+    "type": "split",
+    "children": [
+      {
+        "id": "268b4df136060311",
+        "type": "tabs",
+        "dimension": 42.766497461928935,
+        "children": [
+          {
+            "id": "d2b5c4b09a23c254",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Hubs/CompTIA A+ Core 1 Hub.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CompTIA A+ Core 1 Hub"
+            }
+          },
+          {
+            "id": "793454dddf178d33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Hubs/CompTIA A+ Core 1 Hub.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CompTIA A+ Core 1 Hub"
+            }
+          },
+          {
+            "id": "708c270ffca13eb2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Hubs/CompTIA A+ Core 1 Hub.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CompTIA A+ Core 1 Hub"
+            }
+          },
+          {
+            "id": "b684dc4ba42b32e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Hubs/CompTIA A+ Core 1 Hub.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CompTIA A+ Core 1 Hub"
+            }
+          },
+          {
+            "id": "043418820f39f26e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - A+ Core/Ports/25 - SMTP (Simple Mail Transfer Protocol).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "25 - SMTP (Simple Mail Transfer Protocol)"
+            }
+          },
+          {
+            "id": "003e2136c3d7bd74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - A+ Core/Ports/53 - DNS (Domain Name System).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "53 - DNS (Domain Name System)"
+            }
+          },
+          {
+            "id": "7828356b6654c8bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - A+ Core/Ports/67, 68 - DHCP (Dynamic Host Configuration Protocol).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "67, 68 - DHCP (Dynamic Host Configuration Protocol)"
+            }
+          },
+          {
+            "id": "ff24a2a6e1a03259",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - A+ Core/Ports/80 - HTTP (Hypertext Transfer Protocol).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "80 - HTTP (Hypertext Transfer Protocol)"
+            }
+          },
+          {
+            "id": "b8c4805d2eef1296",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - A+ Core/Ports/110 - POP3 (Post Office Protocol v3).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "110 - POP3 (Post Office Protocol v3)"
+            }
+          },
+          {
+            "id": "7b1c70fef248c3b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - A+ Core/Ports/143 - IMAP4 (Internet Message Access Protocol).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "143 - IMAP4 (Internet Message Access Protocol)"
+            }
+          },
+          {
+            "id": "4ab3188b1804bd92",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - A+ Core/Ports/443 - HTTPS (HTTP Secure).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "443 - HTTPS (HTTP Secure)"
+            }
+          },
+          {
+            "id": "3c46ed9c34e2dbec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - A+ Core/Ports/445 - SMB,CIFS (Server Message Block).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "445 - SMB,CIFS (Server Message Block)"
+            }
+          },
+          {
+            "id": "8dc2a8fd514a2872",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - A+ Core/Ports/3389 - RDP (Remote Desktop Protocol).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3389 - RDP (Remote Desktop Protocol)"
+            }
+          },
+          {
+            "id": "c539d18ed4b870bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - A+ Core/Ports/137 - 139 - NetBIOS, NetBT.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "137 - 139 - NetBIOS, NetBT"
+            }
+          },
+          {
+            "id": "f23a80cda9296cc1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - A+ Core/Ports/427 - SLP (Service Location Protocol).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "427 - SLP (Service Location Protocol)"
+            }
+          },
+          {
+            "id": "00b80445101a5c36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - A+ Core/Ports/3389 - RDP (Remote Desktop Protocol).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3389 - RDP (Remote Desktop Protocol)"
+            }
+          },
+          {
+            "id": "72428b1bf8ba755d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - A+ Core/Ports/3389 - RDP (Remote Desktop Protocol).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3389 - RDP (Remote Desktop Protocol)"
+            }
+          },
+          {
+            "id": "75f5c9de731b870a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "90 - Templates/00 - Port Note Template.md.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00 - Port Note Template.md"
+            }
+          }
+        ],
+        "currentTab": 17
+      },
+      {
+        "id": "ef435a1433949988",
+        "type": "tabs",
+        "dimension": 57.233502538071065,
+        "children": [
+          {
+            "id": "a7c031d461f487c6",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5f02caf33afcdbab",
+    "type": "split",
+    "children": [
+      {
+        "id": "cebe0ee7846b8a09",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29fa9a02f407e5ba",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "41a067242cae90a2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ceb6afcacc283d07",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "46d07d3858b81b60",
+    "type": "split",
+    "children": [
+      {
+        "id": "f3ffbccf91abb166",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "66ab6f63a7fd6972",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "90 - Templates/00 - Port Note Template.md.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 00 - Port Note Template.md"
+            }
+          },
+          {
+            "id": "f5005dc43f0131cd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "90 - Templates/00 - Port Note Template.md.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 00 - Port Note Template.md"
+            }
+          },
+          {
+            "id": "2469745a3eda3ade",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ae9b6ebf58907be4",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "7c65e66c531f127f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "90 - Templates/00 - Port Note Template.md.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 00 - Port Note Template.md"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "29fa9a02f407e5ba",
+  "lastOpenFiles": [
+    "01 - A+ Core/Ports/3389 - RDP (Remote Desktop Protocol).md",
+    "90 - Templates/00 - Port Note Template.md.md",
+    "01 - A+ Core/Ports/548 - AFP (Apple File Protocol).md",
+    "01 - A+ Core/Ports/445 - SMB,CIFS (Server Message Block).md",
+    "01 - A+ Core/Ports/443 - HTTPS (HTTP Secure).md",
+    "01 - A+ Core/Ports/427 - SLP (Service Location Protocol).md",
+    "01 - A+ Core/Ports/143 - IMAP4 (Internet Message Access Protocol).md",
+    "01 - A+ Core/Ports/137 - 139 - NetBIOS, NetBT.md",
+    "01 - A+ Core/Ports/110 - POP3 (Post Office Protocol v3).md",
+    "01 - A+ Core/Ports/80 - HTTP (Hypertext Transfer Protocol).md",
+    "01 - A+ Core/Ports/67, 68 - DHCP (Dynamic Host Configuration Protocol).md",
+    "01 - A+ Core/Ports/53 - DNS (Domain Name System).md",
+    "01 - A+ Core/Ports/25 - SMTP (Simple Mail Transfer Protocol).md",
+    "01 - A+ Core/Ports/23 - Telnet (Telecommunication Network).md",
+    "01 - A+ Core/Ports/22 - SSH (Secure Shell).md",
+    "01 - A+ Core/Ports/20, 21 - FTP (File Transfer Protocol).md",
+    "01 - A+ Core/Ports/00 - A+ Core Ports - Master.md.md",
+    "01 - A+ Core/Ports",
+    "00 - Hubs/CompTIA A+ Core 1 Hub.md",
+    "Ports.md",
+    "Welcome.md",
+    "Untitled 5",
+    "99 - Attachments",
+    "90 - Templates",
+    "02 - A+ Core 2",
+    "01 - A+ Core",
+    "00 - Hubs"
+  ]
+}
