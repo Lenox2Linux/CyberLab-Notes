@@ -7,9 +7,15 @@
 
 ## Career Target
 
-**Role:** EY Cyber Threat Detection – Active Defense Analyst
-**Location:** Hoboken, NJ
-**Target Application Window:** Late 2026 – Early 2027
+**Domain:** Cyber Defense Operations — SOC Analysis, Active Defense, GRC
+
+**Target Roles:**
+- SOC Analyst (Tier 1/2)
+- Cyber Threat Detection / Active Defense Analyst
+- GRC Analyst / Compliance Analyst
+- DFIR Analyst
+
+**Target Timeline:** Entry-level SOC or GRC role — Fall/Winter 2027 post-transfer
 
 ---
 
@@ -32,12 +38,16 @@
 
 ## Certification Roadmap
 
-| Cert | Target Date | Status |
-|---|---|---|
-| CompTIA Security+ | May 2026 | Studying |
-| GIAC GCIH | Post Security+ | Planned |
-| OSCP | Post GCIH | Planned |
-
+| Cert                                 | Status      | Target      |
+| ------------------------------------ | ----------- | ----------- |
+| Google Cybersecurity Certificate     | In Progress | Spring 2026 |
+| ISC² CC (Certified in Cybersecurity) | In Progress | Spring 2026 |
+| CompTIA A+ Core 1                    | Studying    | May 2026    |
+| CompTIA A+ Core 2                    | Studying    | May 2026    |
+| CompTIA Network+                     | Studying    | May 2026    |
+| CompTIA Security+                    | Planned     | Late 2026   |
+| GIAC GCIH                            | Planned     | 2027        |
+| OSCP                                 | Planned     | 2027        |
 
 ---
 
