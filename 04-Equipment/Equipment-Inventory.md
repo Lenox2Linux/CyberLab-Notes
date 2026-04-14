@@ -29,12 +29,23 @@
 | Notes       | Primary lab services node                                       |
 
 ### ADM-01 — Admin Workstation
-| Field       | Value                                                               |
-| ----------- | ------------------------------------------------------------------- |
-| Model       | ThinkPad T14                                                        |
-| OS          | Windows 11 Pro                                                      |
-| Role        | Admin workstation / personal laptop                                 |
-| ⚠️ Warning  | Dual-homing risk — disable WiFi before ethernet during lab sessions |
+
+| Field        | ThinkPad T14 (Retired)                        | AceMagic Mini PC (Active)                  |
+| ------------ | --------------------------------------------- | ------------------------------------------ |
+| Model        | Lenovo ThinkPad T14 Gen 2 (20XLS09L00)        | AceMagic Mini PC                           |
+| Form Factor  | Laptop                                        | Mini PC                                    |
+| CPU          | AMD Ryzen 7 PRO 5850U (8C/16T)               | AMD Ryzen 7 6800H (8C/16T)                |
+| RAM          | 16GB DDR4 3200 MT/s                           | 30GB DDR5 + 24GB Swap                      |
+| Storage      | 512GB NVMe (ADATA LEGEND 710, PCIe 3.0)       | 476.9GB NVMe SSD                           |
+| OS           | Windows 11 Pro                                | Debian GNU/Linux 13 (Trixie)               |
+| Hostname     | —                                             | intelux-adm-01                             |
+| User         | —                                             | itadmin                                    |
+| VLAN         | 10 — MGMT                                     | 10 — MGMT                                 |
+| Switch Port  | SW-01 P6                                      | SW-01 P6                                  |
+| Wazuh Agent  | 008 — Group: ADMIN, windows                   | 017 — Group: ADMIN                         |
+| Dual-Home    | ⚠️ Yes — WiFi + Ethernet risk                 | ✅ No — dedicated MGMT node                |
+| Personal Use | ⚠️ Yes — school/personal on same device       | ✅ No — lab use only                       |
+| Status       | Retired 2026-04-14                            | Active                                     |
 
 ### RED-01 — Red Team Machine
 | Field       | Value                          |
