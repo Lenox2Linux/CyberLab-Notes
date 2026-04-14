@@ -88,3 +88,15 @@ Wazuh indexer → dashboard
 - [[Wazuh-SIEM]]
 - [[Incidents-And-Lessons]]
 - [[Multi-Tiered-Defensive-Architecture]]
+
+---
+## 📚 Study Connections
+| Lab Concept | Exam Topic |
+|---|---|
+| Suricata as IDS on WAN | [[Network-Security-Concepts]] |
+| IDS vs IPS distinction | [[Network-Security-Concepts]] |
+| ETOpen ruleset | [[Attack-Types]] |
+| EVE JSON log pipeline | [[Net-3.0-Network-Operations-Hub]] |
+| Syslog port 514 UDP | [[Ports-Protocols]] |
+| Perimeter detection layer | [[Net-4.0-Network-Security-Hub]] |
+| Suricata as detective control | [[Network-Security-Concepts]] |

@@ -102,3 +102,19 @@ INTELUX is modeled after a real enterprise SOC/NOC environment. The design follo
 - [[Wazuh-SIEM]]
 - [[Suricata-IDS]]
 - [[RISK-001-Closed]]
+
+---
+## 📚 Study Connections
+| Lab Concept | Exam Topic |
+|---|---|
+| Defense-in-depth model | [[Network-Security-Concepts]] |
+| Perimeter IDS (Suricata) | [[Net-4.0-Network-Security-Hub]] |
+| VLAN network segmentation | [[VLAN-Concepts]] |
+| Host-based detection (Wazuh) | [[Network-Security-Concepts]] |
+| Application security (Caddy TLS) | [[2.0-Security-Hub]] |
+| Identity and access (DC-01/AD) | [[1.0-Operating-Systems-Hub]] |
+| Kill Chain A insider threat | [[Attack-Types]] |
+| Kill Chain B external pivot | [[Attack-Types]] |
+| East-west traffic control | [[VLAN-Concepts]] |
+| Preventive/detective/corrective controls | [[Network-Security-Concepts]] |
+| Zero trust between VLANs | [[Net-4.0-Network-Security-Hub]] |

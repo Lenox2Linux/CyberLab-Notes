@@ -123,3 +123,18 @@ sudo tailscale set --accept-dns=false
 - [[Wazuh-SIEM]]
 - [[Suricata-IDS]]
 - [[pfSense-Firewall]]
+
+---
+## 📚 Study Connections
+| Lab Concept | Exam Topic |
+|---|---|
+| pfSense rule order top-down (INC-001) | [[Network-Security-Concepts]] |
+| Firewall rule troubleshooting | [[Troubleshooting-Methodology]] |
+| Docker config backup lesson (INC-002) | [[4.0-Operational-Procedures-Hub]] |
+| DNS resolution failure (INC-003) | [[Ports-Protocols]] |
+| Tailscale VPN DNS conflict | [[Net-3.0-Network-Operations-Hub]] |
+| Syslog wrapped JSON breaking SIEM (INC-004) | [[Ports-Protocols]] |
+| False positive documentation | [[4.0-Operational-Procedures-Hub]] |
+| Windows Update FIM events | [[2.0-Security-Hub]] |
+| Alert triage process | [[Net-3.0-Network-Operations-Hub]] |
+| Lessons learned documentation | [[4.0-Operational-Procedures-Hub]] |

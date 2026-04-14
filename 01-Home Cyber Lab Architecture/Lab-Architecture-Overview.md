@@ -95,3 +95,21 @@
 - [[VM-Registry]]
 - [[INTELUX-DC-01]]
 - [[Incidents-And-Lessons]]
+
+---
+## 📚 Study Connections
+| Lab Concept | Exam Topic |
+|---|---|
+| VLAN topology (10/20/30/40/50/60) | [[VLAN-Concepts]] |
+| pfSense firewall rules | [[Network-Security-Concepts]] |
+| Suricata IDS on WAN | [[Network-Security-Concepts]] |
+| Wazuh SIEM | [[Network-Security-Concepts]] |
+| Tailscale VPN | [[Network-Security-Concepts]] |
+| VLAN segmentation design | [[Subnetting-CIDR]] |
+| HV-01/CL-01 Proxmox hypervisors | [[4.0-Virtualization-Cloud-Hub]] |
+| Docker containers on SRV-01 | [[4.0-Virtualization-Cloud-Hub]] |
+| intelux.local Active Directory | [[1.0-Operating-Systems-Hub]] |
+| Network device registry | [[Network-Hardware]] |
+| Kill Chain A/B exercises | [[Attack-Types]] |
+| GRC change control docs | [[4.0-Operational-Procedures-Hub]] |
+| Troubleshooting methodology used in sprints | [[Troubleshooting-Methodology]] |

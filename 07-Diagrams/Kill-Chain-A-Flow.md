@@ -21,3 +21,16 @@ Attack flow diagram for Kill Chain A — authorized insider threat exercise. Sho
 - [[INTELUX-DC-01]]
 - [[Wazuh-SIEM]]
 - [[Diagrams-Index]]
+
+---
+## 📚 Study Connections
+| Lab Concept | Exam Topic |
+|---|---|
+| Insider threat attack scenario | [[Attack-Types]] |
+| Reconnaissance phase (nmap) | [[Attack-Types]] |
+| Lateral movement VLAN 50 → VLAN 30 | [[VLAN-Concepts]] |
+| Privilege escalation techniques | [[Attack-Types]] |
+| Wazuh detection on WKS-03 | [[Network-Security-Concepts]] |
+| Blue team detection methodology | [[Net-4.0-Network-Security-Hub]] |
+| Network segmentation as defense | [[Network-Security-Concepts]] |
+| Kill chain framework | [[Net-4.0-Network-Security-Hub]] |

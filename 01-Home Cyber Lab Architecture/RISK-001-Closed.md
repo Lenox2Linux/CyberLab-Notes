@@ -73,3 +73,16 @@ See [[Kill-Chain-B-Flow]] for full exercise plan.
 - [[Incidents-And-Lessons]]
 - [[Kill-Chain-B-Flow]]
 - [[Lab-Architecture-Overview]]
+
+---
+## 📚 Study Connections
+| Lab Concept | Exam Topic |
+|---|---|
+| Lateral movement risk | [[Attack-Types]] |
+| VLAN segmentation as mitigation | [[VLAN-Concepts]] |
+| TCP 443 pinhole firewall rule | [[Network-Security-Concepts]] |
+| ISO 27001 A.13.1.3 compliance | [[4.0-Operational-Procedures-Hub]] |
+| GRC change control documentation | [[4.0-Operational-Procedures-Hub]] |
+| Kill Chain B attack path | [[Attack-Types]] |
+| Network segmentation defense | [[Net-4.0-Network-Security-Hub]] |
+| Risk documentation process | [[Net-3.0-Network-Operations-Hub]] |

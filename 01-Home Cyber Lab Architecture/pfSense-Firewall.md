@@ -111,3 +111,18 @@ Step2 XML backup saved post-VLAN migration (March 30, 2026).
 - [[INTELUX-FW-01-M72e-Planned]]
 - [[Incidents-And-Lessons]]
 - [[RISK-001-Closed]]
+
+---
+## 📚 Study Connections
+| Lab Concept | Exam Topic |
+|---|---|
+| pfSense as firewall/router | [[Network-Security-Concepts]] |
+| Inter-VLAN routing | [[VLAN-Concepts]] |
+| Firewall rule order (top-down) | [[Network-Security-Concepts]] |
+| Outbound NAT | [[Subnetting-CIDR]] |
+| DHCP server per VLAN | [[Ports-Protocols]] |
+| DNS forwarding to Pi-hole | [[Ports-Protocols]] |
+| Suricata IDS on WAN | [[Net-4.0-Network-Security-Hub]] |
+| pfSense as preventive control | [[Network-Security-Concepts]] |
+| Bare-metal migration planning | [[4.0-Operational-Procedures-Hub]] |
+| ACL rule management | [[Net-4.0-Network-Security-Hub]] |

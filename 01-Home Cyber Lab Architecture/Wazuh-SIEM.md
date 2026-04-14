@@ -119,3 +119,17 @@ single-node-wazuh.indexer-1
 - [[Suricata-IDS]]
 - [[Incidents-And-Lessons]]
 - [[pfSense-Firewall]]
+
+---
+## 📚 Study Connections
+| Lab Concept | Exam Topic |
+|---|---|
+| Wazuh as SIEM | [[Network-Security-Concepts]] |
+| Log collection from agents | [[Net-3.0-Network-Operations-Hub]] |
+| File integrity monitoring | [[2.0-Security-Hub]] |
+| Agent comms ports 1514/1515 | [[Ports-Protocols]] |
+| API port 55000 locked to MGMT VLAN | [[Network-Security-Concepts]] |
+| IDS/detection gap analysis | [[Attack-Types]] |
+| False positive documentation | [[4.0-Operational-Procedures-Hub]] |
+| Wazuh as detective control | [[Network-Security-Concepts]] |
+| Docker single-node deployment | [[4.0-Virtualization-Cloud-Hub]] |

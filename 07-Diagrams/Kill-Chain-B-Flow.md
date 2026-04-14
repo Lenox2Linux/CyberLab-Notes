@@ -22,3 +22,18 @@ Attack flow diagram for Kill Chain B — planned portal kiosk pivot exercise. Sh
 - [[INTELUX-DC-01]]
 - [[pfSense-Firewall]]
 - [[Diagrams-Index]]
+
+---
+## 📚 Study Connections
+| Lab Concept | Exam Topic |
+|---|---|
+| External attacker pivot scenario | [[Attack-Types]] |
+| TCP 443 pinhole firewall rule | [[Network-Security-Concepts]] |
+| VLAN 40 PORTAL → VLAN 20 SERVICES path | [[VLAN-Concepts]] |
+| DC-01 as crown jewel target | [[1.0-Operating-Systems-Hub]] |
+| RISK-001 mitigation as defense control | [[Network-Security-Concepts]] |
+| DMZ architecture (VLAN 60) | [[Net-4.0-Network-Security-Hub]] |
+| Wazuh detection opportunities | [[Network-Security-Concepts]] |
+| Defense-in-depth layered controls | [[Net-4.0-Network-Security-Hub]] |
+| Pivot attack technique | [[Attack-Types]] |
+| Kill chain framework | [[Net-4.0-Network-Security-Hub]] |

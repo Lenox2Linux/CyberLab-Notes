@@ -50,3 +50,14 @@ DC-01 on VLAN 10 MGMT (10.100.10.102) — WKS-03 domain joined to intelux.local 
 - [[Trusted-Zone]]
 - [[Incidents-And-Lessons]]
 - [[Lab-Architecture-Overview]]
+
+---
+## 📚 Study Connections
+| Lab Concept | Exam Topic |
+|---|---|
+| VLAN placement planning | [[VLAN-Concepts]] |
+| Inter-VLAN traffic blocking by design | [[Network-Security-Concepts]] |
+| AD ports 88/389/445/636/3268 | [[Ports-Protocols]] |
+| Troubleshooting methodology applied | [[Troubleshooting-Methodology]] |
+| Network segmentation causing service issue | [[VLAN-Concepts]] |
+| Domain controller reachability requirements | [[1.0-Operating-Systems-Hub]] |
